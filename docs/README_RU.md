@@ -27,7 +27,7 @@ __I позаимствовал сам скрипт (spotifyctl.sh)__ у [Wandern
 ## 🖼️ Картинки (Уведомления)
 ![preview](assets/preview/2.png)
 ![preview](assets/preview/3.png)
-***Некастомизированный dunst***
+**Некастомизированный dunst**
 ![preview](assets/preview/1.png)
 
 <!-- HOW DOES IT WORK -->
