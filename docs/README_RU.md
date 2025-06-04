@@ -10,7 +10,9 @@
 </p>
 
 <!-- ABOUT -->
-<h2 align="left"> :blue_book: Информация</h2> 
+<h2 align="left"> :blue_book: Информация</h2>
+
+### [English](../README.md) | **Русский**
 
 __I позаимствовал сам скрипт (spotifyctl.sh)__ у [Wandernauta](https://gist.github.com/wandernauta/6800547), но **Я написал вывод информации о треке через уведомление (dunst)**.
 

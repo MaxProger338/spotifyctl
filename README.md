@@ -10,7 +10,9 @@
 </p>
 
 <!-- ABOUT -->
-<h2 align="left"> :blue_book: About</h2> 
+<h2 align="left"> :blue_book: About</h2>
+
+### **English** | [Русский](docs/README_RU.md)
 
 __I borrowed the script itself (spotifyctl.sh)__ from [Wandernauta](https://gist.github.com/wandernauta/6800547), but **I wrote the output of the track information via a notification (dunst)**.
 
