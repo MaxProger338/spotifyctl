@@ -9,7 +9,7 @@
   </br>
 </p>
 
-<!-- FEATURES -->
+<!-- ABOUT -->
 <h2 align="left"> :blue_book: About</h2> 
 
 __I borrowed the script itself (spotifyctl.sh)__ from [Wandernauta](https://gist.github.com/wandernauta/6800547), but **I wrote the output of the track information via a notification (dunst)**.
@@ -28,37 +28,40 @@ __I borrowed the script itself (spotifyctl.sh)__ from [Wandernauta](https://gist
 **Not customizised dunst**
 ![preview](docs/assets/preview/1.png)
 
+<!-- HOW DOES IT WORK -->
 ## 💻 How does it work 
 To *send a notification*, you need to **execute the notify-spotify-music.sh**.
 It will execute the helper scripts in the following order:
 
-- **download-track-logo** - Download the art from its URL in /tmp/spotify-logos (if it has already been downloaded, it will not be downloaded again)
-- **to-svg.sh** - Convert the resulting logo to SVG *(because Dunst only accepts images in.svg format)*
+- **download-track-logo** - Downloads the art from its URL in /tmp/spotify-logos (if it has already been downloaded, it will not be downloaded again)
+- **to-svg.sh** - Converts the resulting logo to SVG *(because Dunst only accepts images in a .svg format)*
 
-## 🗿 Requirements
+<!-- DEPENDENCIES -->
+## 🗿 Dependencies
 
 - [Inkscape](https://inkscape.org/) - It is used to convert to SVG
 
+<!-- INSTALLITION -->
 ## 📘 Installition
 
-1. **Install inkscape** (for convert)
+1. **Installing Inkscape** (for convert)
 ```bash
 pacman -S inkscape 
 ```
-2. **Copy a repo**
+2. **Coping a repo**
 ```bash
 git clone https://github.com/MaxProger338/spotifyctl
 cd spotifyctl
 ```
-3. **Copy all scripts to a dir** (recomend `~/.local/bin/`)
+3. **Coping all scripts to a dir** (recomend `~/.local/bin/`)
 ```bash
 cp src/spotifyctl.sh ~/.local/bin
 cp src/notify/* ~/.local/bin
 ```
-4. **OPTIONAL: bind them to the keyboard** 
+4. **OPTIONAL: binding them to the keyboard** 
 
 > [!TIP]
-> I use i3 under Xorg, so I should bind them to `~/.config/i3/config`.
+> I use i3 under Xorg, so I should bind them in `~/.config/i3/config`.
 
 ```bash
 #--- SPOTIFY ------------------------------------
