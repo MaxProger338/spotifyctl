@@ -1,12 +1,16 @@
 #!/bin/sh
 
 download_dir=~/.local/tmp/spotify-music-logos
+main_script=~/.local/bin/spotifyctl.sh
+
+# Does a main script exist?
+[[ $(command -v "$main_script") = "" ]] && echo "spotifyctl.sh not found in \$PATH" 1>&2 && exit 1;
 
 # Does the spotify work?
-~/.local/bin/spotifyctl.sh 2>&1 > /dev/null 
-[[ $? -ne 0 ]] && exit 1;
+"$main_script" 2>&1 > /dev/null 
+[[ $? -ne 0 ]] && echo "Spotify is not running" 1>&2 && exit 2;
 
-url="$(~/.local/bin/spotifyctl.sh metadata | grep 'artUrl' | cut -d '|' -f 2)"
+url="$("$main_script" metadata | grep 'artUrl' | cut -d '|' -f 2)"
 name="$(echo "$url" | cut -d '/' -f 5)"
 
 # Creating a download dir if doesn't exist
