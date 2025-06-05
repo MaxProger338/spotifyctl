@@ -6,6 +6,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/issues/MaxProger338/spotifyctl?style=for-the-badge">
   <img src="https://img.shields.io/github/repo-size/MaxProger338/spotifyctl?style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/MaxProger338/spotifyctl/total">
   </br>
 </p>
 
