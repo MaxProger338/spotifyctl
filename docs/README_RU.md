@@ -44,7 +44,19 @@ __I позаимствовал сам скрипт (spotifyctl.sh)__ у [Wandern
 - [Inkscape](https://inkscape.org/) - Он используется для конвертации в SVG
 
 <!-- INSTALLITION -->
-## 📘 Installition
+## Автоустановка
+
+**Чтобы просто установить его, скопируйте и вставьте это в свой терминал:**
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/heads/main/scripts/install.sh -O -)"
+```
+
+**Чтобы забиндить его к i3:**
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/heads/main/scripts/bind_i3.sh -O -)"
+```
+
+## 📘 Ручная установка
 
 1. **Установка Inkscape** (Для конвертации)
 ```bash

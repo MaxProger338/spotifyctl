@@ -46,7 +46,19 @@ It will execute the helper scripts in the following order:
 - [Inkscape](https://inkscape.org/) - It is used to convert to SVG
 
 <!-- INSTALLITION -->
-## 📘 Installition
+## Autoinstall
+
+**To simply install him, copy and paste it to your terminal:**
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/heads/main/scripts/install.sh -O -)"
+```
+
+**To bind him to i3:**
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/heads/main/scripts/bind_i3.sh -O -)"
+```
+
+## 📘 Manual Installition
 
 1. **Installing Inkscape** (for convert)
 ```bash
