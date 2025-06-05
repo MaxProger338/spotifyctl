@@ -1,10 +1,10 @@
 #!/bin/sh
 
 download_dir=~/.local/tmp/spotify-music-logos
-main_script=~/.local/bin/spotifyctl.sh
+main_script=~/.local/bin/spotifyctl/spotifyctl.sh
 
 # Does a main script exist?
-[[ $(command -v "$main_script") = "" ]] && echo "spotifyctl.sh not found in \$PATH" 1>&2 && exit 1;
+[[ $(command -v "$main_script") = "" ]] && echo "spotifyctl.sh not found" 1>&2 && exit 1;
 
 # Does the spotify work?
 "$main_script" 2>&1 > /dev/null 
