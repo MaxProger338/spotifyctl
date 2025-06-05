@@ -58,8 +58,9 @@ cd spotifyctl
 ```
 3. **Coping all scripts to a dir** (recomend `~/.local/bin/`)
 ```bash
-cp src/spotifyctl.sh ~/.local/bin
-cp src/notify/* ~/.local/bin
+mkdir -p ~/.local/bin/spotifyctl
+cp src/spotifyctl.sh ~/.local/bin/spotifyctl
+cp -r src/notify/ ~/.local/bin/spotifyctl/
 ```
 4. **OPTIONAL: binding them to the keyboard** 
 
@@ -69,16 +70,16 @@ cp src/notify/* ~/.local/bin
 ```bash
 #--- SPOTIFY ------------------------------------
 # play next
-bindsym F9 exec ~/.local/bin/spotifyctl.sh next
+bindsym F9 exec ~/.local/bin/spotifyctl/spotifyctl.sh next
 # next and pause
-bindsym F8 exec "~/.local/bin/spotifyctl.sh next && \
-                 ~/.local/bin/spotifyctl.sh pause"
+bindsym F8 exec "~/.local/bin/spotifyctl/spotifyctl.sh next && \
+                 ~/.local/bin/spotifyctl/spotifyctl.sh pause"
 # play prev
-bindsym F7 exec ~/.local/bin/spotifyctl.sh prev
+bindsym F7 exec ~/.local/bin/spotifyctl/spotifyctl.sh prev
 # play/pause
-bindsym F6 exec ~/.local/bin/spotifyctl.sh play
+bindsym F6 exec ~/.local/bin/spotifyctl/spotifyctl.sh play
 # show art/name/artist in notify
-bindsym F5 exec ~/.local/bin/notify-spotify-music.sh
+bindsym F5 exec ~/.local/bin/spotifyctl/notify/notify-spotify-music.sh
 ```
 
 <!-- USAGE -->
