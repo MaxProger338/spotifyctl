@@ -56,11 +56,10 @@ pacman -S inkscape
 git clone https://github.com/MaxProger338/spotifyctl
 cd spotifyctl
 ```
-3. **Coping all scripts to a dir** (recomend `~/.local/bin/`)
+3. **Coping all scripts to a dir** (recomend `~/.local/bin/spotifyctl`)
 ```bash
 mkdir -p ~/.local/bin/spotifyctl
-cp src/spotifyctl.sh ~/.local/bin/spotifyctl
-cp -r src/notify/ ~/.local/bin/spotifyctl/
+cp -r src/* ~/.local/bin/spotifyctl
 ```
 4. **OPTIONAL: binding them to the keyboard** 
 
@@ -79,7 +78,7 @@ bindsym F7 exec ~/.local/bin/spotifyctl/spotifyctl.sh prev
 # play/pause
 bindsym F6 exec ~/.local/bin/spotifyctl/spotifyctl.sh play
 # show art/name/artist in notify
-bindsym F5 exec ~/.local/bin/spotifyctl/notify/notify-spotify-music.sh
+bindsym F5 exec ~/.local/bin/spotifyctl/notify-spotify-music.sh
 ```
 
 <!-- USAGE -->
