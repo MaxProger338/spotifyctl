@@ -68,10 +68,30 @@ cp src/notify/* ~/.local/bin
 
 ```bash
 #--- SPOTIFY ------------------------------------
+# play next
 bindsym F9 exec ~/.local/bin/spotifyctl.sh next
+# next and pause
 bindsym F8 exec "~/.local/bin/spotifyctl.sh next && \
                  ~/.local/bin/spotifyctl.sh pause"
+# play prev
 bindsym F7 exec ~/.local/bin/spotifyctl.sh prev
+# play/pause
 bindsym F6 exec ~/.local/bin/spotifyctl.sh play
+# show art/name/artist in notify
 bindsym F5 exec ~/.local/bin/notify-spotify-music.sh
 ```
+
+<!-- USAGE -->
+## Usage
+
+**Just run the script** with the appropriate parameters ***(spotifyctl.sh)***:
+
+- **next** - play next track
+- **prev** - play prev track
+- **pause** - only pause the track
+- **play** - play/pause the track
+- **metadata** - dump the current track's metadata
+- **current** - show the currently track
+- **eval** - return the metadata as a shell script
+
+**A different script is used for notifications**. Just run it and everything will work right away.
