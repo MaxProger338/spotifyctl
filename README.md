@@ -36,7 +36,7 @@ __I borrowed the script itself (spotifyctl.sh)__ from [Wandernauta](https://gist
 To *send a notification*, you need to **execute the notify-spotify-music.sh**.
 It will execute the helper scripts in the following order:
 
-- **download-track-logo** - Downloads the art from its URL in ~/.local/tmp/spotify-logos (if it has already been downloaded, it will not be downloaded again)
+- **download-track-logo** - Downloads the art from its URL in ~/.tmp/spotify-logos (if it has already been downloaded, it will not be downloaded again)
 - **to-svg.sh** - Converts the resulting logo to SVG *(because Dunst only accepts images in a .svg format)*; (if it has already been converted, it will not be converted again)
 
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-download_dir=~/.local/tmp/spotify-music-logos
+download_dir=~/.tmp/spotify-music-logos
 main_script=~/.local/bin/spotifyctl/spotifyctl.sh
 
 # Does a main script exist?
