@@ -15,7 +15,7 @@
 
 ### **English** | [Русский](docs/README_RU.md)
 
-__I borrowed the script itself (spotifyctl.sh)__ from [Wandernauta](https://gist.github.com/wandernauta/6800547), but **I wrote the output of the track information via a notification (dunst)**.
+__Stole it as is__ (from [Wandernauta](https://gist.github.com/wandernauta/6800547)), __screwed dunst__ to output the current track. It works – *and that's fine*.
 
 <!-- FEATURES -->
 ## 🚀 Features
