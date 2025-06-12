@@ -15,7 +15,7 @@
 
 ### **English** | [Русский](docs/README_RU.md)
 
-__Stole it as is__ (from [Wandernauta](https://gist.github.com/wandernauta/6800547)), __screwed dunst__ to output the current track. It works – *and that's fine*.
+__Stoled it as is__ (from [Wandernauta](https://gist.github.com/wandernauta/6800547)), __screwed dunst__ to output the current track. It works – *and that's fine*.
 
 <!-- FEATURES -->
 ## 🚀 Features
