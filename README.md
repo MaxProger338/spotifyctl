@@ -74,7 +74,13 @@ cd spotifyctl
 mkdir -p ~/.local/bin/spotifyctl
 cp -r src/* ~/.local/bin/spotifyctl
 ```
-4. **OPTIONAL: binding them to the keyboard** 
+
+4. **Creating symbolic link** to *spotifyctl/spotifyctl.sh*
+```bash
+ln -s ~/.local/bin/spotifyctl/spotifyctl.sh ~/.local/bin/spotifyctl.sh
+```
+
+5. **OPTIONAL: binding them to the keyboard** 
 
 > [!TIP]
 > I use i3 under Xorg, so I should bind them in `~/.config/i3/config`.
@@ -82,16 +88,15 @@ cp -r src/* ~/.local/bin/spotifyctl
 ```bash
 #--- SPOTIFY ------------------------------------
 # play next
-bindsym F9 exec ~/.local/bin/spotifyctl/spotifyctl.sh next
+bindsym F9 exec spotifyctl.sh next
 # next and pause
-bindsym F8 exec "~/.local/bin/spotifyctl/spotifyctl.sh next && \
-                 ~/.local/bin/spotifyctl/spotifyctl.sh pause"
+bindsym F8 exec spotifyctl.sh next-pause
 # play prev
-bindsym F7 exec ~/.local/bin/spotifyctl/spotifyctl.sh prev
+bindsym F7 exec spotifyctl.sh prev
 # play/pause
-bindsym F6 exec ~/.local/bin/spotifyctl/spotifyctl.sh play
+bindsym F6 exec spotifyctl.sh play --open
 # show art/name/artist in notify
-bindsym F5 exec ~/.local/bin/spotifyctl/notify-spotify-music.sh
+bindsym F5 exec spotifyctl.sh notify
 ```
 
 <!-- USAGE -->
@@ -103,8 +108,7 @@ bindsym F5 exec ~/.local/bin/spotifyctl/notify-spotify-music.sh
 - **prev** - play prev track
 - **pause** - only pause the track
 - **play** - play/pause the track
-- **metadata** - dump the current track's metadata
-- **current** - show the currently track
-- **eval** - return the metadata as a shell script
+- **next-pause** - next and pause
+- **notify** - notify
 
-**A different script is used for notifications**. Just run it and everything will work right away.
+Use `--open` to open Spotify if it doesn't open.
