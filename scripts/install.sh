@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# Const
+#--- Constants ------------
 dir=~/.local/bin/
 
-# Colors
+#--- Colors --------------
 RED="\033[31m"
 NC="\033[0m"
 
@@ -18,3 +18,6 @@ cp -r spotifyctl/src/* "$dir/spotifyctl"
 
 # Removing a repo
 rm -rf spotifyctl
+
+#--- Creating symlink to spotifyctl.sh -------------
+ln -s "$dir/spotifyctl/spotifyctl.sh" "$dir/spotifyctl.sh"
