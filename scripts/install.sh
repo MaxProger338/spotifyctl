@@ -5,7 +5,7 @@ dir=~/.local/bin/spotifyctl
 
 #--- Colors --------------
 RED="\033[31m"
-ORANGE="\033[48m"
+YELLOW="\033[33m"
 NC="\033[0m"
 
 #--- Installing ------------
@@ -22,6 +22,6 @@ cp -r spotifyctl/src/* "$dir"
 rm -rf spotifyctl
 
 #--- Connecting :) -------------
-ln -s "$dir/spotifyctl/spotifyctl.sh" "$dir/spotifyctl.sh"
+ln -sf "$dir/spotifyctl/spotifyctl.sh" "$dir/spotifyctl.sh"
 
-[[ $(command -v spotifyctlsh) = "" ]] && echo -e "${ORANGE}Please, add ~/.local/bin/ to \$PATH so you could run him${NC}"
+[[ $(command -v spotifyctl.sh) = "" ]] && echo -e "${YELLOW}Please, add ~/.local/bin/ to \$PATH so you could run him${NC}"
