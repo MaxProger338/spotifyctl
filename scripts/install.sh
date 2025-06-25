@@ -6,6 +6,8 @@ dir=~/.local/bin/spotifyctl
 #--- Colors --------------
 RED="\033[31m"
 YELLOW="\033[33m"
+BLUE="\033[34m"
+GREEN="\033[32m"
 NC="\033[0m"
 
 #--- Installing ------------
@@ -13,15 +15,25 @@ NC="\033[0m"
 [[ "$PWD" != "$HOME" ]]      && echo -e "${RED}Please, change the directory to ${HOME}${NC}" && exit 2
 [[ -d "$dir" ]]              && echo -e "${RED}Please, remove ${dir}${NC}" && exit 3
 
+echo -e "${BLUE}Clonning the repo...${NC}"
 git clone https://github.com/MaxProger338/spotifyctl
-# Creating a output dir
+echo -e "${GREEN}Success${NC}"
+
+echo -e "${BLUE}Creating output dir...${NC}"
 mkdir -p "$dir"
-# Copying all files from scr/ to a output dir 
+echo -e "${GREEN}Success${NC}"
+
+echo -e "${BLUE}Copy all files to the output dir...${NC}"
 cp -r spotifyctl/src/* "$dir"
-# Removing a repo
+echo -e "${GREEN}Success${NC}"
+
+echo -e "${BLUE}Removing the donwloaded repo...${NC}"
 rm -rf spotifyctl
+echo -e "${GREEN}Success${NC}"
 
 #--- Connecting :) -------------
+echo -e "${BLUE}Creating symlink...${NC}"
 ln -sf "$dir/spotifyctl.sh" "$dir/../spotifyctl.sh"
+echo -e "${GREEN}Success${NC}"
 
-[[ $(command -v spotifyctl.sh) = "" ]] && echo -e "${YELLOW}Please, add ~/.local/bin/ to \$PATH so you could run him${NC}"
+[[ "$(command -v spotifyctl.sh)" = "" ]] && echo -e "${YELLOW}Please, add ~/.local/bin/ to \$PATH so you could run him${NC}" || echo -e "${GREEN}Well done!${NC}"
