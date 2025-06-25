@@ -53,6 +53,9 @@ Use `--open` to open Spotify if it doesn't open.
 <!-- INSTALLITION -->
 ## Autoinstall
 
+> [!WARNING]
+> These scripts works only with POSIX-shells (with [fish](https://github.com/fish-shell/fish-shell) doesn't work)
+
 **To simply install him, copy and paste it to your terminal:**
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/heads/main/scripts/install.sh -O -)"
@@ -64,9 +67,6 @@ sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/hea
 ```
 
 ## 📘 Manual Installition
-
-> [!WARNING]
-> These scripts works only with POSIX-shells (with [fish](https://github.com/fish-shell/fish-shell) doesn't work)
 
 1. **Installing Inkscape** (for convert)
 ```bash
