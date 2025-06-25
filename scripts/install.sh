@@ -22,6 +22,6 @@ cp -r spotifyctl/src/* "$dir"
 rm -rf spotifyctl
 
 #--- Connecting :) -------------
-ln -sf "$dir/spotifyctl/spotifyctl.sh" "$dir/spotifyctl.sh"
+ln -sf "$dir/spotifyctl.sh" "$dir/../spotifyctl.sh"
 
 [[ $(command -v spotifyctl.sh) = "" ]] && echo -e "${YELLOW}Please, add ~/.local/bin/ to \$PATH so you could run him${NC}"
