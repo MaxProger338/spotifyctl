@@ -97,6 +97,12 @@ bindsym F6 exec spotifyctl.sh play --open
 bindsym F5 exec spotifyctl.sh notify
 ```
 
+> [!IMPORTANT]
+> Чтобы это работало, вам нужно добавить '~/.loca/bin' в $PATH.
+> ```
+> export PATH="$PATH:~/.local/bin"
+> ```
+
 <!-- USAGE -->
 ## Использование
 
