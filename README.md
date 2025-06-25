@@ -31,14 +31,19 @@ __Stoled it as is__ (from [Wandernauta](https://gist.github.com/wandernauta/6800
 **Not customizised dunst**
 ![preview](docs/assets/preview/1.png)
 
-<!-- HOW DOES IT WORK -->
-## 💻 How does it work 
-To *send a notification*, you need to **execute spotifyctl.sh notify**.
-It will execute the helper scripts in the following order:
+<!-- USAGE -->
+## Usage
 
-- **download-logo.sh** - Downloads the art from its URL in ~/.tmp/spotify-music-logos (if it has already been downloaded, it will not be downloaded again)
-- **convert.sh** - Converts the resulting logo to SVG *(because Dunst only accepts images in a .svg format)*; (if it has already been converted, it will not be converted again)
+**Just run the script** with the appropriate parameters ***(spotifyctl.sh)***:
 
+- **next** - play next track
+- **prev** - play prev track
+- **pause** - only pause the track
+- **play** - play/pause the track
+- **next-pause** - next and pause
+- **notify** - notify
+
+Use `--open` to open Spotify if it doesn't open.
 
 <!-- DEPENDENCIES -->
 ## 🗿 Dependencies
@@ -59,6 +64,9 @@ sh -c "$(wget https://raw.githubusercontent.com/MaxProger338/spotifyctl/refs/hea
 ```
 
 ## 📘 Manual Installition
+
+> [!WARNING]
+> These scripts works only with POSIX-shells (with [fish](https://github.com/fish-shell/fish-shell) doesn't work)
 
 1. **Installing Inkscape** (for convert)
 ```bash
@@ -105,16 +113,10 @@ bindsym F5 exec spotifyctl.sh notify
 > export PATH="$PATH:~/.local/bin"
 > ```
 
-<!-- USAGE -->
-## Usage
+<!-- HOW DOES IT WORK -->
+## 💻 How does it work 
+To *send a notification*, you need to **execute spotifyctl.sh notify**.
+It will execute the helper scripts in the following order:
 
-**Just run the script** with the appropriate parameters ***(spotifyctl.sh)***:
-
-- **next** - play next track
-- **prev** - play prev track
-- **pause** - only pause the track
-- **play** - play/pause the track
-- **next-pause** - next and pause
-- **notify** - notify
-
-Use `--open` to open Spotify if it doesn't open.
+- **download-logo.sh** - Downloads the art from its URL in ~/.tmp/spotify-music-logos (if it has already been downloaded, it will not be downloaded again)
+- **convert.sh** - Converts the resulting logo to SVG *(because Dunst only accepts images in a .svg format)*; (if it has already been converted, it will not be converted again)
