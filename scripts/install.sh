@@ -16,7 +16,7 @@ NC="\033[0m"
 [[ -d "$dir" ]]              && echo -e "${RED}Please, remove ${dir}${NC}" && exit 3
 
 echo -e "${BLUE}Clonning the repo...${NC}"
-(git clone https://github.com/MaxProger338/spotifyctl 2>&1) > /dev/null
+git clone https://github.com/MaxProger338/spotifyctl > /dev/null
 error="$?"
 if [[ "$error" -ne 0 ]] then
 	echo -e "${RED}Git clonning error ${error}${NC}"
